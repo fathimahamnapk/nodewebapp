@@ -15,7 +15,7 @@ app.use(express.static(path.join(_dirname,"public")));
 
 app.use("/",userRouter)//specifying user,s route //to handle all the request from user ,we create a file userRouter
 
-const PORT =3001 || process.env.PORT;
+const PORT =3000 || process.env.PORT;
 app.listen(process.env.PORT ,()=>{
     console.log("Server is running");
 })
